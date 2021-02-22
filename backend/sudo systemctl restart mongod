@@ -1,0 +1,11 @@
+[0;1;31m●[0m mongod.service - MongoDB Database Server
+     Loaded: loaded (/lib/systemd/system/mongod.service; disabled; vendor preset: enabled)
+     Active: [0;1;31mfailed[0m (Result: exit-code) since Wed 2021-02-17 10:32:05 -04; 1min 15s ago
+       Docs: https://docs.mongodb.org/manual
+    Process: 7883 ExecStart=/usr/bin/mongod --config /etc/mongod.conf [0;1;31m(code=exited, status=1/FAILURE)[0m
+   Main PID: 7883 (code=exited, status=1/FAILURE)
+
+fev 17 10:32:05 lobolanco systemd[1]: Started MongoDB Database Server.
+fev 17 10:32:05 lobolanco mongod[7883]: {"t":{"$date":"2021-02-17T14:32:05.946Z"},"s":"F",  "c":"CONTROL",  "id":20574,   "ctx":"main","msg":"Error during global initialization","attr":{"error":{"code":38,"codeName":"FileNotOpen","errmsg":"Failed to open /var/log/mongodb/mongod.log"}}}
+fev 17 10:32:05 lobolanco systemd[1]: [0;1;39m[0;1;31m[0;1;39mmongod.service: Main process exited, code=exited, status=1/FAILURE[0m
+fev 17 10:32:05 lobolanco systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmongod.service: Failed with result 'exit-code'.[0m
